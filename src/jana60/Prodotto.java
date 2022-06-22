@@ -4,17 +4,16 @@ import java.text.DecimalFormat;
 
 public class Prodotto {
 
-	private int codiceProdotto, ivaProdotto;
+	private int codiceProdotto, ivaProdotto = 20;
 	private String nomeProdotto, marcaProdotto;
 	private double prezzoProdotto;
 	
 	private DecimalFormat df = new DecimalFormat(".00€");
 
-	public Prodotto(int codiceProdotto, int ivaProdotto, String nomeProdotto, String marcaProdotto, double prezzoProdotto) {
+	public Prodotto(int codiceProdotto, String nomeProdotto, String marcaProdotto, double prezzoProdotto) {
 		
 		super();
 		this.codiceProdotto = codiceProdotto;
-		this.ivaProdotto = ivaProdotto;
 		this.nomeProdotto = nomeProdotto;
 		this.marcaProdotto = marcaProdotto;
 		this.prezzoProdotto = prezzoProdotto;
@@ -23,10 +22,6 @@ public class Prodotto {
 
 	public int getIvaProdotto() {
 		return ivaProdotto;
-	}
-
-	public void setIvaProdotto(int ivaProdotto) {
-		this.ivaProdotto = ivaProdotto;
 	}
 
 	public String getNomeProdotto() {

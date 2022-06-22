@@ -11,9 +11,9 @@ public class Smartphone extends Prodotto {
 	private DecimalFormat df = new DecimalFormat("0 GB");
 	private Random random = new Random();
 	
-	public Smartphone(int codiceProdotto, int ivaProdotto, String nomeProdotto, String marcaProdotto, double prezzoProdotto,  int memoriaCellulare) {
+	public Smartphone(int codiceProdotto, String nomeProdotto, String marcaProdotto, double prezzoProdotto,  int memoriaCellulare) {
 		
-		super(codiceProdotto, ivaProdotto, nomeProdotto, marcaProdotto, prezzoProdotto);
+		super(codiceProdotto, nomeProdotto, marcaProdotto, prezzoProdotto);
 		this.memoriaCellulare = memoriaCellulare;
 		this.codiceIMEI = generaSerie(8) + "-" + generaSerie(6) + "-" + generaSerie(1) + "-" + generaSerie(2);
 		
