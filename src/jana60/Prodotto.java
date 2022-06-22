@@ -61,16 +61,16 @@ public class Prodotto {
 		
 		double prezzoFinale;
 		
-		prezzoFinale = (prezzoProdotto * ivaProdotto) / 100;
+		prezzoFinale = prezzoProdotto + ((prezzoProdotto * ivaProdotto) / 100);
 		
-		return "Il prezzo finale è pari a: " + df.format(prezzoFinale);
+		return df.format(prezzoFinale);
 		
 	}
 	
 	@Override
 	public String toString() {
 		
-		return  "Nome prodotto: " + nomeProdotto + "\nMarca prodotto: " + marcaProdotto + "\nPrezzo finale: " + stampaPrezzoProdotto(); 
+		return "Codice prodotto: " + codiceProdotto + "\nNome prodotto: " + nomeProdotto + "\nMarca prodotto: " + marcaProdotto + "\nPrezzo finale: " + stampaPrezzoProdotto(); 
 	
 	}
 	
